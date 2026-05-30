@@ -154,7 +154,8 @@ Jekyll::Hooks.register :site, :post_read do |site|
       entry = { 'version' => ver }
 
       # По умолчанию пытаемся достать summary и дату из _data/changelog.yml.
-      changelog_data = site.data.dig('changelog', doc) || []
+      changelog_section = site.data['changelog']
+      changelog_data = (changelog_section.is_a?(Hash) ? changelog_section[doc] : nil) || []
       fallback = changelog_data.find { |e| e['version'] == ver } || {}
 
       languages.each do |lang|
