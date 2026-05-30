@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024" role="img" aria-label="FLOWXE app icon">
+  <title>FLOWXE</title>
+  <defs>
+    <linearGradient id="wg" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#185FA5"/>
+      <stop offset="100%" stop-color="#1D9E75"/>
+    </linearGradient>
+    <clipPath id="iconBounds">
+      <rect x="0" y="0" width="1024" height="1024" rx="224" ry="224"/>
+    </clipPath>
+    <clipPath id="chev">
+      <path d="M 321 162 Q 276 162 272 200 Q 272 219 285 232 L 547 512 L 285 792 Q 272 805 272 824 Q 276 862 321 862 L 416 862 Q 441 862 458 844 L 724 568 Q 749 542 749 512 Q 749 482 724 456 L 458 180 Q 441 162 416 162 Z"/>
+    </clipPath>
+  </defs>
+  <g clip-path="url(#iconBounds)">
+    <rect x="0" y="0" width="1024" height="1024" fill="#0C1A2E"/>
+    <g clip-path="url(#chev)">
+      <rect x="0" y="0" width="1024" height="1024" fill="#091425"/>
+      <path d="M 160 236 Q 270 204 380 236 Q 490 268 620 236 Q 750 204 864 236" stroke="url(#wg)" stroke-width="38" stroke-linecap="round" fill="none"/>
+      <path d="M 160 312 Q 270 280 380 312 Q 490 344 620 312 Q 750 280 864 312" stroke="url(#wg)" stroke-width="38" stroke-linecap="round" fill="none"/>
+      <path d="M 160 388 Q 270 356 380 388 Q 490 420 620 388 Q 750 356 864 388" stroke="url(#wg)" stroke-width="38" stroke-linecap="round" fill="none"/>
+      <path d="M 160 464 Q 270 432 380 464 Q 490 496 620 464 Q 750 432 864 464" stroke="url(#wg)" stroke-width="38" stroke-linecap="round" fill="none"/>
+      <path d="M 160 540 Q 270 508 380 540 Q 490 572 620 540 Q 750 508 864 540" stroke="url(#wg)" stroke-width="38" stroke-linecap="round" fill="none"/>
+      <path d="M 160 616 Q 270 584 380 616 Q 490 648 620 616 Q 750 584 864 616" stroke="url(#wg)" stroke-width="38" stroke-linecap="round" fill="none"/>
+      <path d="M 160 692 Q 270 660 380 692 Q 490 724 620 692 Q 750 660 864 692" stroke="url(#wg)" stroke-width="38" stroke-linecap="round" fill="none"/>
+      <path d="M 160 768 Q 270 736 380 768 Q 490 800 620 768 Q 750 736 864 768" stroke="url(#wg)" stroke-width="38" stroke-linecap="round" fill="none"/>
+      <path d="M 160 844 Q 270 812 380 844 Q 490 876 620 844 Q 750 812 864 844" stroke="url(#wg)" stroke-width="38" stroke-linecap="round" fill="none"/>
+    </g>
+    <path d="M 321 162 Q 276 162 272 200 Q 272 219 285 232 L 547 512 L 285 792 Q 272 805 272 824 Q 276 862 321 862 L 416 862 Q 441 862 458 844 L 724 568 Q 749 542 749 512 Q 749 482 724 456 L 458 180 Q 441 162 416 162 Z"
+          fill="none" stroke="#9FE1CB" stroke-width="7" stroke-linejoin="round"/>
+  </g>
+</svg>

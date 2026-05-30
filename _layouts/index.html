@@ -1,0 +1,33 @@
+---
+layout: default
+---
+{% assign lang = page.lang %}
+{% assign s = page.strings %}
+
+<div class="index-hero">
+  <h1>{{ s.index_title }}</h1>
+  <p>{{ s.index_subtitle }}</p>
+</div>
+
+<div class="doc-list">
+  {% for pair in page.versions_data %}
+    {% assign doc_key = pair[0] %}
+    {% assign info = pair[1] %}
+    {% assign current = info.current %}
+    {% assign current_entry = info.entries | where: 'version', current | first %}
+    {% assign summary_key = 'summary_' | append: lang %}
+    {% assign current_summary = current_entry[summary_key] %}
+
+    <a class="doc-card" href="/{{ lang }}/{{ doc_key }}/">
+      <div class="doc-card-title">{{ s.doc_titles[doc_key] }}</div>
+      <div class="doc-card-meta">
+        <span class="doc-card-version">{{ current }}</span>
+        <span>·</span>
+        <span>{{ s.effective_from }} {{ current_entry.effective_date }}</span>
+      </div>
+      {% if current_summary %}
+        <div class="doc-card-summary">{{ current_summary | strip | newline_to_br }}</div>
+      {% endif %}
+    </a>
+  {% endfor %}
+</div>

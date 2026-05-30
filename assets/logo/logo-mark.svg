@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 340" width="260" height="340" role="img" aria-label="FLOWXE logo">
+  <title>FLOWXE</title>
+  <defs>
+    <linearGradient id="wg" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#185FA5"/>
+      <stop offset="100%" stop-color="#1D9E75"/>
+    </linearGradient>
+    <clipPath id="chev">
+      <path d="M 68 60 Q 54 60 52 72 Q 52 78 56 82 L 144 170 L 56 258 Q 52 262 52 268 Q 54 280 68 280 L 98 280 Q 106 280 112 274 L 196 190 Q 204 182 204 170 Q 204 158 196 150 L 112 66 Q 106 60 98 60 Z"/>
+    </clipPath>
+  </defs>
+  <g clip-path="url(#chev)">
+    <rect x="0" y="0" width="260" height="340" fill="#091425"/>
+    <path d="M 30 82 Q 60 74 90 82 Q 120 90 155 82 Q 190 74 225 82" stroke="url(#wg)" stroke-width="11" stroke-linecap="round" fill="none"/>
+    <path d="M 30 106 Q 60 98 90 106 Q 120 114 155 106 Q 190 98 225 106" stroke="url(#wg)" stroke-width="11" stroke-linecap="round" fill="none"/>
+    <path d="M 30 130 Q 60 122 90 130 Q 120 138 155 130 Q 190 122 225 130" stroke="url(#wg)" stroke-width="11" stroke-linecap="round" fill="none"/>
+    <path d="M 30 154 Q 60 146 90 154 Q 120 162 155 154 Q 190 146 225 154" stroke="url(#wg)" stroke-width="11" stroke-linecap="round" fill="none"/>
+    <path d="M 30 178 Q 60 170 90 178 Q 120 186 155 178 Q 190 170 225 178" stroke="url(#wg)" stroke-width="11" stroke-linecap="round" fill="none"/>
+    <path d="M 30 202 Q 60 194 90 202 Q 120 210 155 202 Q 190 194 225 202" stroke="url(#wg)" stroke-width="11" stroke-linecap="round" fill="none"/>
+    <path d="M 30 226 Q 60 218 90 226 Q 120 234 155 226 Q 190 218 225 226" stroke="url(#wg)" stroke-width="11" stroke-linecap="round" fill="none"/>
+    <path d="M 30 250 Q 60 242 90 250 Q 120 258 155 250 Q 190 242 225 250" stroke="url(#wg)" stroke-width="11" stroke-linecap="round" fill="none"/>
+  </g>
+  <path d="M 68 60 Q 54 60 52 72 Q 52 78 56 82 L 144 170 L 56 258 Q 52 262 52 268 Q 54 280 68 280 L 98 280 Q 106 280 112 274 L 196 190 Q 204 182 204 170 Q 204 158 196 150 L 112 66 Q 106 60 98 60 Z"
+        fill="none" stroke="#9FE1CB" stroke-width="2" stroke-linejoin="round"/>
+</svg>

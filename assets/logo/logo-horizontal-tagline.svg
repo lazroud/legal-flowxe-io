@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 260" width="680" height="260" role="img" aria-label="FLOWXE — Cut through anything">
+  <title>FLOWXE — Cut through anything</title>
+  <defs>
+    <linearGradient id="wg" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#185FA5"/>
+      <stop offset="100%" stop-color="#1D9E75"/>
+    </linearGradient>
+    <clipPath id="chev">
+      <path d="M 54 42 Q 42 42 40 52 Q 40 58 44 62 L 114 132 L 44 202 Q 40 206 40 212 Q 42 222 54 222 L 78 222 Q 85 222 90 217 L 157 150 Q 164 143 164 132 Q 164 121 157 114 L 90 47 Q 85 42 78 42 Z"/>
+    </clipPath>
+  </defs>
+  <g transform="translate(40, 0)">
+    <g clip-path="url(#chev)">
+      <rect x="0" y="0" width="200" height="260" fill="#091425"/>
+      <path d="M 22 56 Q 50 50 78 56 Q 106 62 134 56 Q 160 50 182 56" stroke="url(#wg)" stroke-width="9" stroke-linecap="round" fill="none"/>
+      <path d="M 22 76 Q 50 70 78 76 Q 106 82 134 76 Q 160 70 182 76" stroke="url(#wg)" stroke-width="9" stroke-linecap="round" fill="none"/>
+      <path d="M 22 96 Q 50 90 78 96 Q 106 102 134 96 Q 160 90 182 96" stroke="url(#wg)" stroke-width="9" stroke-linecap="round" fill="none"/>
+      <path d="M 22 116 Q 50 110 78 116 Q 106 122 134 116 Q 160 110 182 116" stroke="url(#wg)" stroke-width="9" stroke-linecap="round" fill="none"/>
+      <path d="M 22 136 Q 50 130 78 136 Q 106 142 134 136 Q 160 130 182 136" stroke="url(#wg)" stroke-width="9" stroke-linecap="round" fill="none"/>
+      <path d="M 22 156 Q 50 150 78 156 Q 106 162 134 156 Q 160 150 182 156" stroke="url(#wg)" stroke-width="9" stroke-linecap="round" fill="none"/>
+      <path d="M 22 176 Q 50 170 78 176 Q 106 182 134 176 Q 160 170 182 176" stroke="url(#wg)" stroke-width="9" stroke-linecap="round" fill="none"/>
+      <path d="M 22 196 Q 50 190 78 196 Q 106 202 134 196 Q 160 190 182 196" stroke="url(#wg)" stroke-width="9" stroke-linecap="round" fill="none"/>
+    </g>
+    <path d="M 54 42 Q 42 42 40 52 Q 40 58 44 62 L 114 132 L 44 202 Q 40 206 40 212 Q 42 222 54 222 L 78 222 Q 85 222 90 217 L 157 150 Q 164 143 164 132 Q 164 121 157 114 L 90 47 Q 85 42 78 42 Z"
+          fill="none" stroke="#9FE1CB" stroke-width="1.8" stroke-linejoin="round"/>
+  </g>
+  <text x="260" y="150" font-family="Arial, Helvetica, sans-serif" font-size="84" font-weight="500" fill="#0C1A2E" letter-spacing="-1">FLOW<tspan fill="#185FA5">XE</tspan></text>
+  <text x="260" y="196" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#1D9E75" letter-spacing="3">CUT THROUGH ANYTHING</text>
+</svg>

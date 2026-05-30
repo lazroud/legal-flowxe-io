@@ -1,0 +1,11 @@
+{% comment %}
+  Сохраняет текущий путь, меняя только префикс /ru/ или /en/.
+{% endcomment %}
+{% assign current_lang = page.lang | default: site.default_lang %}
+{% assign path_without_lang = page.url | remove_first: '/ru' | remove_first: '/en' %}
+{% if path_without_lang == '' %}{% assign path_without_lang = '/' %}{% endif %}
+
+<nav class="lang-switcher" aria-label="Language">
+  <a href="/ru{{ path_without_lang }}" {% if current_lang == 'ru' %}class="active"{% endif %}>RU</a>
+  <a href="/en{{ path_without_lang }}" {% if current_lang == 'en' %}class="active"{% endif %}>EN</a>
+</nav>

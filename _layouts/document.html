@@ -1,0 +1,40 @@
+---
+layout: default
+---
+{% assign lang = page.lang %}
+{% assign s = page.strings %}
+
+<article>
+  <div class="doc-header">
+    <div class="doc-breadcrumb">
+      <a href="/{{ lang }}/">{{ s.documents }}</a>
+      &nbsp;/&nbsp;
+      {{ page.doc_title }}
+    </div>
+
+    <h1>{{ page.doc_title }}</h1>
+
+    <div class="doc-meta">
+      <span class="doc-version-badge {% if page.is_archived %}archived{% endif %}">
+        {{ page.version }}
+      </span>
+      {% if page.effective_date %}
+        <span>{{ s.effective_from }} {{ page.effective_date }}</span>
+      {% endif %}
+      <a href="/{{ lang }}/{{ page.doc }}/changelog/" class="doc-changelog-link">
+        {{ s.changelog }} →
+      </a>
+    </div>
+
+    {% if page.show_archived_banner %}
+      <div class="archived-banner">
+        {{ s.archived_banner | replace: '%{version}', page.version }}
+        <a href="/{{ lang }}/{{ page.doc }}/">{{ s.open_current | replace: '%{version}', page.current_version }}</a>
+      </div>
+    {% endif %}
+  </div>
+
+  <div class="doc-content">
+    {{ content | markdownify }}
+  </div>
+</article>

@@ -1,0 +1,51 @@
+---
+layout: default
+---
+{% assign lang = page.lang %}
+{% assign s = page.strings %}
+{% assign summary_key = 'summary_' | append: lang %}
+
+<article>
+  <div class="doc-header">
+    <div class="doc-breadcrumb">
+      <a href="/{{ lang }}/">{{ s.documents }}</a>
+      &nbsp;/&nbsp;
+      <a href="/{{ lang }}/{{ page.doc }}/">{{ page.doc_title }}</a>
+      &nbsp;/&nbsp;
+      {{ s.changelog }}
+    </div>
+
+    <h1>
+      {{ s.changelog }}
+      <span style="font-weight: 400; color: var(--text-muted); font-size: 0.7em;">
+        — {{ page.doc_title }}
+      </span>
+    </h1>
+  </div>
+
+  <div>
+    {% for entry in page.entries %}
+      <div class="changelog-entry">
+        <div class="changelog-entry-header">
+          <span class="changelog-version {% if entry.version == page.current_version %}current{% endif %}">
+            {{ entry.version }}
+          </span>
+          <span class="changelog-date">
+            {{ s.effective_from }} {{ entry.effective_date }}
+          </span>
+          <a href="/{{ lang }}/{{ page.doc }}/{{ entry.version }}/" class="changelog-entry-link">
+            {{ s.open_version }}
+          </a>
+        </div>
+        <div>
+          {% assign entry_summary = entry[summary_key] %}
+          {% if entry_summary %}
+            {{ entry_summary | markdownify }}
+          {% else %}
+            <p style="color: var(--text-muted);">{{ s.no_summary }}</p>
+          {% endif %}
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</article>

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" role="img" aria-label="FLOWXE">
+  <title>FLOWXE</title>
+  <defs>
+    <linearGradient id="wg" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#185FA5"/>
+      <stop offset="100%" stop-color="#1D9E75"/>
+    </linearGradient>
+    <clipPath id="chev">
+      <path d="M 9 7 Q 6 7 6 9 Q 6 10 7 11 L 19 23 L 7 35 Q 6 36 6 37 Q 6 39 9 39 L 13 39 Q 14 39 15 38 L 27 27 Q 28 25 28 23 Q 28 21 27 19 L 15 7 Q 14 7 13 7 Z" transform="translate(-4, -6) scale(0.88)"/>
+    </clipPath>
+  </defs>
+  <rect x="0" y="0" width="32" height="32" rx="5" ry="5" fill="#0C1A2E"/>
+  <g clip-path="url(#chev)">
+    <path d="M 3 9 Q 7 8 11 9 Q 15 10 19 9 Q 23 8 27 9" stroke="url(#wg)" stroke-width="1.9" stroke-linecap="round" fill="none"/>
+    <path d="M 3 15 Q 7 14 11 15 Q 15 16 19 15 Q 23 14 27 15" stroke="url(#wg)" stroke-width="1.9" stroke-linecap="round" fill="none"/>
+    <path d="M 3 21 Q 7 20 11 21 Q 15 22 19 21 Q 23 20 27 21" stroke="url(#wg)" stroke-width="1.9" stroke-linecap="round" fill="none"/>
+    <path d="M 3 27 Q 7 26 11 27 Q 15 28 19 27 Q 23 26 27 27" stroke="url(#wg)" stroke-width="1.9" stroke-linecap="round" fill="none"/>
+  </g>
+</svg>

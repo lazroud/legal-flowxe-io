@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.default_lang }}">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if page.title %}{{ page.title }} — {% endif %}{{ site.title }}</title>
+  <meta name="description" content="{{ page.description | default: site.description }}">
+  <link rel="icon" type="image/svg+xml" href="/assets/logo/favicon.svg">
+  <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  {% if page.noindex %}
+    <meta name="robots" content="noindex">
+  {% endif %}
+  {% seo %}
+</head>
+<body>
+
+<header class="site-header">
+  <div class="site-header-inner">
+    <a href="/{{ page.lang | default: site.default_lang }}/" class="site-logo">
+      <img src="/assets/logo/logo-horizontal.svg" alt="FLOWXE">
+    </a>
+    {% include lang-switcher.html %}
+  </div>
+</header>
+
+<main class="page">
+  {{ content }}
+</main>
+
+<footer class="site-footer">
+  <div class="site-footer-inner">
+    <div>© {{ 'now' | date: '%Y' }} FLOWXE Network</div>
+    <div>
+      <a href="{{ site.brand.cabinet_url }}">cabinet.flowxe.io</a>
+      &nbsp;·&nbsp;
+      <a href="{{ site.brand.bot_url }}">@flowxe_bot</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

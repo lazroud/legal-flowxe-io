@@ -1,0 +1,42 @@
+## FLOWXE Legal — Jekyll config
+title: FLOWXE Legal
+description: Юридические документы FLOWXE Network
+url: "https://legal.flowxe.io"
+baseurl: ""
+
+# Бренд
+brand:
+  name: FLOWXE
+  domain: flowxe.io
+  cabinet_url: https://cabinet.flowxe.io
+  bot_url: https://t.me/flowxe_bot
+  tagline_en: "Faster. Smoother. Everywhere."
+  tagline_ru: "Быстрее. Стабильнее. Везде."
+
+# Языки
+# Документы и версии плагин обнаруживает сам, сканируя папку _docs/.
+# Первый язык в списке считается опорным при проверке синхронности.
+languages: ["ru", "en"]
+default_lang: ru
+
+# Markdown
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+
+# Плагины
+plugins:
+  - jekyll-seo-tag
+
+# Что не включаем в готовый сайт
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - .gitignore
+  - .github
+
+# Permalinks
+permalink: pretty
