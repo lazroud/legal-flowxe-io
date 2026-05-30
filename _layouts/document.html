@@ -28,8 +28,8 @@ layout: default
 
     {% if page.show_archived_banner %}
       <div class="archived-banner">
-        {{ s.archived_banner | replace: '%{version}', page.version }}
-        <a href="/{{ lang }}/{{ page.doc }}/">{{ s.open_current | replace: '%{version}', page.current_version }}</a>
+        {{ s.archived_banner | replace: '__VERSION__', page.version }}
+        <a href="/{{ lang }}/{{ page.doc }}/">{{ s.open_current | replace: '__VERSION__', page.current_version }}</a>
       </div>
     {% endif %}
   </div>
